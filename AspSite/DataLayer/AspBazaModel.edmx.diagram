@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8dcaa2438aa743b0ad9c183cfbddb7c6" Name="Diagram1">
+        <EntityTypeShape EntityType="AspSiteBazaModel.AspNetRole" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.AspNetUser" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Author" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Find" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Navmenu" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Picture" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Single" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Contact" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="AspSiteBazaModel.FK_Author_Picture" ManuallyRouted="false" />
+        <AssociationConnector Association="AspSiteBazaModel.FK_Single_Picture" ManuallyRouted="false" />
+        <AssociationConnector Association="AspSiteBazaModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Slider" Width="1.5" PointX="3" PointY="9.625" />
+        <AssociationConnector Association="AspSiteBazaModel.FK_Slider_Picture" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Product" Width="1.5" PointX="5.5" PointY="9.375" />
+        <AssociationConnector Association="AspSiteBazaModel.ProductPicture" />
+        <EntityTypeShape EntityType="AspSiteBazaModel.Comment" Width="1.5" PointX="10.25" PointY="5.125" />
+        <AssociationConnector Association="AspSiteBazaModel.FK_Comment_AspNetUsers" />
+        <AssociationConnector Association="AspSiteBazaModel.FK_Comment_Product" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

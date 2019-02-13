@@ -1,0 +1,37 @@
+﻿@model AspSite.Models.ProductPicViewModel
+@using AspSite.Models;
+@using AspSite.BusinessLogic.Dto;
+@{
+    ViewBag.Title = "Single";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-9 technology-left">
+    <div class="business">
+        <div class=" blog-grid2">
+            <img src="/@Model.Single[0].Pictures[0].Src" class="img-responsive" alt="">
+            <div class="blog-text">
+                <h5>@Model.Single[0].Header</h5>
+                <p>@Model.Single[0].Description</p>
+            </div>
+        </div>
+        <h2>Comments</h2>
+        @foreach (CommentDto c in Model.Comment)
+        {
+            @Html.Partial("Partials/Single/_Comments", c)
+        }
+        @if (Request.IsAuthenticated)
+        {
+            @Html.Partial("Partials/Single/_CommentForm")
+        }
+        else
+        {
+            <div class="comment">
+                <h2>Log in to comment first</h2>
+            </div>
+        }
+
+    </div>
+</div>
+
+

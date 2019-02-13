@@ -1,0 +1,16 @@
+﻿@model AspSite.BusinessLogic.Dto.CommentDto
+@using AspSite.BusinessLogic
+@using AspSite.Models
+<div class="comment-top">
+    <div class="probaKomentar">
+    <div class="media-left">
+        <a href="#">
+            <img src="~/Content/Images/si.png" alt="">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">@Model.User[0].UserName</h4>
+        <p>@Model.Content</p>
+    </div>
+</div>
+</div>

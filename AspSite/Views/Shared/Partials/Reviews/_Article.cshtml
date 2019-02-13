@@ -1,0 +1,13 @@
+﻿@model AspSite.BusinessLogic.Dto.SingleDto
+
+<div class="rev">
+    <div class="rev-img">
+        <a href="@Url.Action("Single","Home",new { id = Model.Id })"><img src="~/@Model.Pictures[0].Src" class="img-responsive" alt=""></a>
+    </div>
+    <div class="rev-info">
+        <h3><a href="@Url.Action("Single","Home",new { id = Model.Id })">@Model.Header</a></h3>
+        <p>@Model.Description </p>
+    </div>
+    <div class="clearfix"></div>
+</div>
+    

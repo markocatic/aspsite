@@ -1,0 +1,42 @@
+﻿@model IEnumerable<AspSite.BusinessLogic.Dto.RoleDto>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-md-9 technology-left">
+  
+    <div class="business">
+        <h2>Role Panel</h2>
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new {id = item.UUID}) |
+                        @Html.ActionLink("Details", "Details", new {id = item.UUID}) |
+                        @Html.ActionLink("Delete", "Delete", new {id = item.UUID})
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

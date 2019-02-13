@@ -1,0 +1,25 @@
+﻿@using AspSite.BusinessLogic.Dto;
+
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model AspSite.BusinessLogic.Dto.SliderDto
+<div class="col-md-9 technology-left">
+    <div class="col-md-12">
+
+        @foreach (PictureDto pic in Model.Pictures)
+        {
+            <img src="/@pic.Src" alt="@pic.Alt" class="mySlides">
+        }
+        
+        
+
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+        <!-- /#main-slider -->
+
+
+    </div>
+

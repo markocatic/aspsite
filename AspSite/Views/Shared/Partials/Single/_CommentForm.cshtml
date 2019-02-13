@@ -1,0 +1,31 @@
+﻿@model AspSite.Models.ProductPicViewModel
+@using AspSite.Models;
+@using AspSite.BusinessLogic.Dto;
+
+
+            
+
+    <div class="form-horizontal">
+      
+        <hr />
+        <div class="proba">
+       
+        <div class="form-group">
+            <form>
+                <div class="col-md-10">
+                    <textarea type="text" id="textarea" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+               
+                </div>
+            
+
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" id="btn-post-id" value="@Model.Single[0].Id" class="btn btn-default" />
+                </div>
+            </div>
+            </form>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Reviews";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model AspSite.Models.ProductPicViewModel
+@using AspSite.BusinessLogic.Dto;
+@using AspSite.Models;
+
+<div class="col-md-9 technology-left">
+
+    <div class="technology-1">
+        <div class="vide-1">
+
+        @foreach (SingleDto s in Model.Single)
+        {
+            @Html.Partial("Partials/Reviews/_Article",s)
+        }
+          
+
+           @Html.Partial("Partials/Reviews/_Video")
+
+        </div>
+    </div>
+</div>
